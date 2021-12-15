@@ -3,7 +3,7 @@ import styles from '../styles/Home.module.css';
 
 export default function PageWithJSbasedForm() {
 	// Handle the submit event on form submit.
-	const handleSubmit = async event => {
+	const handleSubmit = async (event) => {
 		// Stop the form from submitting and refreshing the page.
 		event.preventDefault();
 
@@ -51,7 +51,6 @@ export default function PageWithJSbasedForm() {
 			<form onSubmit={handleSubmit}>
 				<label htmlFor="first">First Name</label>
 				<input type="text" id="first" name="first" required />
-
 				<label htmlFor="last">Last Name</label>
 				<input type="text" id="last" name="last" required />
 
